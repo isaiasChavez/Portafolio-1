@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Consejos from "./Components/Consejos";
 import Footer from "./Components/Footer";
-import Rentas from "./Components/Rentas";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import MyWorks from "./Components/MyWorks";
+import Services from "./Components/Services";
+import Contact from "./Components/Contact";
+import FindMe from "./Components/FindMe";
+import Fade from "react-reveal/Fade";
 
-import DejaConsejo from "./Components/DejaConsejo";
 function App() {
   const [paginaEnPrincipal, setpaginaEnPrincipal] = useState({
     consejos: true,
@@ -15,18 +19,22 @@ function App() {
 
   return (
     <>
-       
-
       <Navbar setpaginaEnPrincipal={setpaginaEnPrincipal} />
-      <div className="App container-fluid min-vh-100 pt-5">
-        {paginaEnPrincipal.consejos === true ? <Consejos /> : null}
-        {paginaEnPrincipal.rentas === true ? <Rentas /> : null}
-        {paginaEnPrincipal.dejarConsejo === true ? <DejaConsejo /> : null}
-        <Footer />
+      <div className="container-fluid bg-dark">
+        <Fade>
+          <Hero />
+        </Fade>
       </div>
       
-     
+      <About />
+      <div className="container-fluid bg-dark">
+        <Services />
 
+        <MyWorks />
+        <Contact />
+        <FindMe />
+        <Footer />
+      </div>
     </>
   );
 }
