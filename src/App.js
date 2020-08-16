@@ -22,16 +22,16 @@ function App() {
       <Navbar setpaginaEnPrincipal={setpaginaEnPrincipal} />
       <div className="container-fluid bg-dark">
         <Fade>
-          <Hero />
+          <Hero id='hero' />
         </Fade>
       </div>
       
-      <About />
+      <About id='about' />
       <div className="container-fluid bg-dark">
-        <Services />
+        <Services id='services' />
 
-        <MyWorks />
-        <Contact />
+        <MyWorks id='works' />
+        <Contact id='contact' />
         <FindMe />
         <Footer />
       </div>

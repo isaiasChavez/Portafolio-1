@@ -8,16 +8,20 @@ body{
   background-image: url('./img/background.jpg');
   background-size: cover;
 }
-.img-about{
 
-  
-
- 
-  
-  margin-bottom: 2em;
-  opacity: 0.4;
-}
 
 #root{
   background-color: #343a40 ;
+}
+
+.img-about{
+  opacity: 0.3;
+  filter: opacity(0.3);
+}
+.div-works{
+filter: grayscale(100%);  
+
+}
+.about{
+
 }

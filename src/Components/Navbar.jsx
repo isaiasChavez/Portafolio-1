@@ -7,8 +7,7 @@ const Navbar = ({ setpaginaEnPrincipal }) => {
       <div className="row">
         <nav
           class="navbar navbar-expand-sm col navbar-dark bg-dark fixed-top "
-          data-toggle="collapse" 
-          
+          data-toggle="collapse"
         >
           <a class="navbar-brand" href="#">
             <p className="display-5">JUAN PABLO</p>
@@ -24,31 +23,55 @@ const Navbar = ({ setpaginaEnPrincipal }) => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse offset-md-5 offset-lg-7 offset-sm-1  border-bottom " id="navbarNav">
+          <div
+            class="collapse navbar-collapse offset-md-5 offset-lg-7 offset-sm-1  border-bottom "
+            id="navbarNav"
+          >
             <ul class="navbar-nav  ">
-              <li class="nav-item active">
+              <Link
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 <a class="nav-link pb-3" href="#">
                   Home <span class="sr-only">(current)</span>
                 </a>
-              </li>
-              <li class="nav-item">
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 <a class="nav-link  pb-3" href="#">
                   About
                 </a>
-              </li>
-
-              <li class="nav-item ">
-                <a
-                  class="nav-link  pb-3"
-                  data-toggle="modal"
-                  data-target="#staticBackdrop"
-                  href="#"
-                >
+              </Link>
+              <Link
+                activeClass="active"
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a class="nav-link  pb-3" href="#">
                   Services
                 </a>
-              </li>
-
-              <li class="nav-item ">
+              </Link>
+              <Link
+                activeClass="active"
+                to="works"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 <a
                   class="nav-link  pb-3"
                   data-toggle="modal"
@@ -57,17 +80,23 @@ const Navbar = ({ setpaginaEnPrincipal }) => {
                 >
                   Portfolio
                 </a>
-              </li>
-              <li class="nav-item ">
+              </Link>
+
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 <a
                   class="nav-link  pb-3"
-                  data-toggle="modal"
-                  data-target="#staticBackdrop"
                   href="#"
                 >
                   Contact
                 </a>
-              </li>
+              </Link>
             </ul>
           </div>
         </nav>

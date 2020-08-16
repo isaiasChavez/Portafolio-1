@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import Service from "./Service";
 import Fade from "react-reveal/Fade";
 
-const Services = () => {
+const Services = ({id}) => {
   return (
     <Fragment>
-      <div className="row bg-dark">
+      <div className="row bg-dark" id={id}>
         <div className="d-flex col-lg-10  offset-1 flex-column align-items-center bg-dark  pb-5 pt-5 ">
           <Fade right>
             <h2 className=" w-100 pl-4 display-3 text-white pt-5">Services</h2>

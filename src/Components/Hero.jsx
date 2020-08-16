@@ -1,9 +1,9 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const Hero = () => {
+const Hero = ({ id }) => {
   return (
-    
-    <div className="row pb-5 ">
+    <div className="row pb-5 " id={id}>
       <div class="card w-100 min-vh-100 bg-dark d-flex justify-content-center align-items-center rounded-0 border-0">
         <div class="card-body h-100  d-flex justify-content-center flex-column">
           <h5 class="display-3 text-center font-weight-bold text-white">
@@ -13,12 +13,40 @@ const Hero = () => {
             Software Developer
           </p>
           <div className=" d-flex justify-content-around">
-            <a href="#" class="btn btn-outline-light mt-5 mr-3 pt-3 pb-3 w-50 rounded">
-              Portfolio
-            </a>
-            <a href="#" class="btn btn-outline-light mt-5 w-50 pt-3 pb-3 rounded">
-              Contact me
-            </a>
+          <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a
+                  class="nav-link btn btn-outline-light btn-lg mt-5 py-3 px-4"
+                  data-toggle="modal"
+                  data-target="#staticBackdrop"
+                  href="#"
+                >
+                  About
+                </a>
+              </Link>
+            <Link
+                activeClass="active"
+                to="works"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a
+                  class="nav-link btn btn-outline-light btn-lg mt-5 py-3 px-4"
+                  data-toggle="modal"
+                  data-target="#staticBackdrop"
+                  href="#"
+                >
+                  Portfolio
+                </a>
+              </Link>
           </div>
         </div>
       </div>
