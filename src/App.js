@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -11,27 +11,21 @@ import FindMe from "./Components/FindMe";
 import Fade from "react-reveal/Fade";
 
 function App() {
-  const [paginaEnPrincipal, setpaginaEnPrincipal] = useState({
-    consejos: true,
-    rentas: false,
-    dejarConsejo: false,
-  });
-
   return (
     <>
-      <Navbar setpaginaEnPrincipal={setpaginaEnPrincipal} />
+      <Navbar />
       <div className="container-fluid bg-dark">
         <Fade>
-          <Hero id='hero' />
+          <Hero id="hero" />
         </Fade>
       </div>
-      
-      <About id='about' />
-      <div className="container-fluid bg-dark">
-        <Services id='services' />
 
-        <MyWorks id='works' />
-        <Contact id='contact' />
+      <About id="about" />
+      <div className="container-fluid bg-dark">
+        <Services id="services" />
+
+        <MyWorks id="works" />
+        <Contact id="contact" />
         <FindMe />
         <Footer />
       </div>

@@ -6,10 +6,10 @@ const Services = ({id}) => {
   return (
     <Fragment>
       <div className="row bg-dark" id={id}>
-        <div className="d-flex col-lg-10  offset-1 flex-column align-items-center bg-dark  pb-5 pt-5 ">
+        <div className="d-flex col-lg-10  offset-lg-1 flex-column align-items-center bg-dark  pb-5 pt-5 ">
           <Fade right>
-            <h2 className=" w-100 pl-4 display-3 text-white pt-5">Services</h2>
-            <p className="card-text pt-5 pl-4 pb-4 pr-3 m-0  text-white">
+            <h2 className=" w-100 pl-2 display-3 text-white pt-5">Services</h2>
+            <p className="card-text pt-5 pl-3 pb-4 pr-3 m-0  text-white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
               porro sint perspiciatis n Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Nobis dolorem sint doloremque mollitia soluta

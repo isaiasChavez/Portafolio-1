@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import img from "../img/juan.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import Slide from "react-reveal/Slide";
 const About = ({id}) => {
   return (
     <Fragment>
@@ -16,9 +15,9 @@ const About = ({id}) => {
             </div>
 
             <div className=" col-lg-7 d-flex align-items-center flex-column">
-              <h2 className=" pl-5 display-3 text-white">About</h2>
+              <h2 className=" display-3 text-white">About</h2>
 
-              <p className="card-text p-4 text-white">
+              <p className="card-text pt-4 text-center text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis porro sint perspiciatis n Lorem, ipsum dolor sit amet
                 consectetur adipisicing elit. Nobis dolorem sint doloremque
@@ -30,9 +29,9 @@ const About = ({id}) => {
             </div>
           </div>
        
-      <div className="d-flex col-sm-12 col-lg-10 offset-lg-1 min-vh-100 justify-content-center  flex-column align-items-center bg-dark pb-5 ">
+      <div className="d-flex text-center col-sm-12 col-lg-10 offset-lg-1 min-vh-100 justify-content-center  flex-column align-items-center bg-dark pb-5 ">
         <Fade>
-          <h2 className="bg-dark w-100 pl-4 display-5 text-white">
+          <h2 className="bg-dark w-100  display-5 text-white">
             Lets Colaborate
           </h2>
           <p className="card-text p-4 text-white">
@@ -45,7 +44,7 @@ const About = ({id}) => {
             dolores.
           </p>
         </Fade>
-        <button className="btn btn-outline-light btn-lg align-self-start ml-4">
+        <button className="btn btn-outline-light text-center btn-lg ml-4">
           Puchame
         </button>
       </div>
