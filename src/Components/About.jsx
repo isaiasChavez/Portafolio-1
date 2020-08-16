@@ -10,7 +10,10 @@ const About = () => {
       
         <div className="d-flex col-sm-12 flex-wrap align-items-center bg-dark min-vh-100 pb-5">
           <div className="d-flex col-lg-5  justify-content-center">
+            <Zoom >
+
             <img className="img-fluid w-100 img-about " src={img} alt="" />
+            </Zoom>
           </div>
 
           <div className=' col-lg-7 d-flex align-items-center flex-column'>

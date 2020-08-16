@@ -31,7 +31,7 @@ const MyWorks = () => {
               <img className='img-fluid  w-50  m-1' src={img} alt=""/>
               <img className='img-fluid w-50  m-1' src={img} alt=""/>
               <img className='img-fluid w-50  m-1' src={img} alt=""/>
-              <img className='img-fluid w-50  m-1' src={img} alt=""/>
+              <img className='img-fluid w-50 m-1' src={img} alt=""/>
               </Fade>
           </div>
         </div>
